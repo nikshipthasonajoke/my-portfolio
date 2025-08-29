@@ -1,4 +1,4 @@
-import { FaEnvelope, FaGithub, FaLinkedin, FaReact, FaPython, FaHtml5, FaCss3Alt, FaNodeJs, FaTrophy, FaCode } from "react-icons/fa";
+import { FaCode, FaEnvelope, FaGithub, FaLinkedin, FaReact, FaPython, FaHtml5, FaCss3Alt, FaNodeJs, FaTrophy } from "react-icons/fa";
 import { SiCplusplus, SiJavascript, SiMysql, SiPandas, SiScikitlearn, SiFlask, SiPhp, SiNumpy } from "react-icons/si";
 
 export const navLinks = [
@@ -34,7 +34,30 @@ export const experienceData = [
 ];
 
 export const projectsData = [
-  // ... your projects data is unchanged ...
+  {
+    title: "Crop Recommendation",
+    description: "A Flask-based web app that recommends crops using soil and weather data, achieving 99% accuracy with Random Forest.",
+    tags: ["Flask", "Python", "Machine Learning", "Scikit-Learn"],
+    link: "https://github.com/nikshipthasonajoke/Crop-recommendation",
+  },
+  {
+    title: "Pet Playdate Organizer",
+    description: "A full-stack social platform for pet owners to organize local playdates. (Currently in development).",
+    tags: ["MERN Stack", "React", "Node.js", "MongoDB", "Google Maps API"],
+    link: "https://github.com/nikshipthasonajoke",
+  },
+  {
+    title: "Stroke Prediction",
+    description: "A machine learning model that classifies stroke risk using patient data, handling class imbalance with SMOTE to improve accuracy.",
+    tags: ["Python", "Scikit-Learn", "Pandas", "Data Science"],
+    link: "https://github.com/nikshipthasonajoke/PRML-Project",
+  },
+  {
+    title: "Student Result Portal",
+    description: "A secure DBMS portal for managing student academic records with role-based access for students, teachers, and admins.",
+    tags: ["PHP", "MySQL", "HTML", "Bootstrap", "DBMS"],
+    link: "https://github.com/nikshipthasonajoke/Student-Result-Portal",
+  },
 ];
 
 export const awardsData = [
@@ -60,8 +83,8 @@ export const techStackData = {
   "Web Development": [
     { name: "React", icon: FaReact },
     { name: "Node.js", icon: FaNodeJs },
-    { name: "HTML", icon: FaHtml5 }, // UPDATED NAME
-    { name: "CSS", icon: FaCss3Alt }, // UPDATED NAME
+    { name: "HTML", icon: FaHtml5 },
+    { name: "CSS", icon: FaCss3Alt },
     { name: "Flask", icon: SiFlask },
     { name: "PHP", icon: SiPhp },
   ],
