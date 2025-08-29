@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+  body {
+    @apply font-sans antialiased bg-[#0F172A] text-gray-300;
+    background-image: radial-gradient(circle, rgba(100, 116, 139, 0.1) 1px, transparent 1px);
+    background-size: 25px 25px;
+  }
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  * {
+    scrollbar-width: none;
+  }
+  *::-ms-scrollbar {
+    display: none;
+  }
+}
+
+/* === NEW CODE FOR THE ACTIVE LINK UNDERLINE === */
+
+/* This sets up the base for the animation */
+.nav-link {
+  @apply relative; /* Needed for the ::after pseudo-element */
+}
+.nav-link::after {
+  @apply absolute bottom-[-4px] left-0 h-[2px] w-0 bg-sky-400 transition-all duration-300;
+  content: '';
+}
+
+/* This is the active state that triggers the underline animation */
+.nav-link-active {
+  @apply text-white; /* Make the active link text brighter */
+}
+.nav-link-active::after {
+  @apply w-full; /* Animate the underline to full width */
+}
