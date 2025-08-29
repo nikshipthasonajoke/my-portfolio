@@ -13,8 +13,6 @@ const Hero = () => {
         <p className="mt-4 text-lg md:text-xl text-gray-400 max-w-3xl mx-auto">
           {heroData.title}
         </p>
-        
-        {/* UPDATED: This section now includes the resume button */}
         <div className="mt-8 flex justify-center items-center flex-wrap gap-6">
           {heroData.socials.map((social) => (
             <a
@@ -23,7 +21,7 @@ const Hero = () => {
               target="_blank"
               rel="noopener noreferrer"
               aria-label={social.name}
-              className="text-gray-400 hover:text-sky-400 transition-colors text-3xl"
+              className="text-gray-400 hover:text-sky-400 transition-colors text-3xl p-1 focusable" // Added focusable
             >
               <social.icon />
             </a>
@@ -31,7 +29,7 @@ const Hero = () => {
           <a
             href={heroData.resumeUrl}
             download="Nikshiptha_Sonajoke_Resume.pdf"
-            className="bg-sky-500 text-white font-bold py-3 px-6 rounded-lg hover:bg-sky-600 transition-colors"
+            className="bg-sky-500 text-white font-bold py-3 px-6 rounded-lg hover:bg-sky-600 transition-colors focusable" // Added focusable
           >
             Download Resume
           </a>

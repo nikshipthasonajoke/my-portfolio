@@ -3,20 +3,23 @@ import { FaExternalLinkAlt } from "react-icons/fa";
 
 const Projects = () => {
   return (
-    // Make sure your section has an ID for the scroll-spy to work
     <section id="projects" className="py-20">
       <div className="container mx-auto px-6">
-        
-        {/* THIS IS THE CORRECTED LINE with the proper styling */}
         <h2 className="text-3xl font-bold text-center text-white mb-12">Projects</h2>
-        
         <div className="grid md:grid-cols-2 gap-8">
           {projectsData.map((project) => (
             <div key={project.title} className="bg-gray-800/50 rounded-lg overflow-hidden shadow-lg transform hover:-translate-y-2 transition-transform duration-300 backdrop-blur-sm">
               <div className="p-6 flex flex-col h-full">
                 <div className="flex justify-between items-start mb-2">
                   <h3 className="text-xl font-bold text-white">{project.title}</h3>
-                  <a href={project.link} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-sky-400">
+                  <a
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    // Add an accessible label for the icon link
+                    aria-label={`View the ${project.title} project on GitHub`}
+                    className="text-gray-400 hover:text-sky-400 p-1 focusable" // Added focusable
+                  >
                     <FaExternalLinkAlt />
                   </a>
                 </div>
