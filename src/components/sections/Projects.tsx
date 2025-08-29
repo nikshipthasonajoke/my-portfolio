@@ -6,7 +6,10 @@ const Projects = () => {
     // Make sure your section has an ID for the scroll-spy to work
     <section id="projects" className="py-20">
       <div className="container mx-auto px-6">
-        <h2 className="text-3รนl font-bold text-center text-white mb-12">Projects</h2>
+        
+        {/* THIS IS THE CORRECTED LINE with the proper styling */}
+        <h2 className="text-3xl font-bold text-center text-white mb-12">Projects</h2>
+        
         <div className="grid md:grid-cols-2 gap-8">
           {projectsData.map((project) => (
             <div key={project.title} className="bg-gray-800/50 rounded-lg overflow-hidden shadow-lg transform hover:-translate-y-2 transition-transform duration-300 backdrop-blur-sm">
