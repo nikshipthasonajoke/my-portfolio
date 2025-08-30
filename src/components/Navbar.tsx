@@ -18,7 +18,7 @@ const Navbar = ({ activeSection }: NavbarProps) => {
               <a
                 key={link.name}
                 href={link.href}
-                className={`nav-link text-gray-300 transition-colors hover:text-white ${isActive ? "nav-link-active" : ""} focusable p-1`} // Added focusable
+                className={`nav-link text-gray-300 transition-colors hover:text-white ${isActive ? "nav-link-active" : ""} focusable p-1`}
               >
                 {link.name}
               </a>
@@ -26,7 +26,8 @@ const Navbar = ({ activeSection }: NavbarProps) => {
           })}
           <a
             href="#contact"
-            className="bg-sky-500 text-white font-bold py-2 px-4 rounded-lg hover:bg-sky-600 transition-colors focusable" // Added focusable
+            // UPDATED COLORS for better contrast
+            className="bg-sky-600 text-white font-bold py-2 px-4 rounded-lg hover:bg-sky-700 transition-colors focusable"
           >
             Contact
           </a>

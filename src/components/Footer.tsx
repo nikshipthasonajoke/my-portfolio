@@ -10,14 +10,15 @@ const Footer = () => {
         <div className="flex justify-center items-center flex-wrap gap-6">
           <a 
             href="mailto:niksonajoke@gmail.com"
-            className="bg-sky-500 text-white font-bold py-3 px-8 rounded-lg hover:bg-sky-600 transition-colors focusable" // Added focusable
+            // UPDATED COLORS for better contrast
+            className="bg-sky-600 text-white font-bold py-3 px-8 rounded-lg hover:bg-sky-700 transition-colors focusable"
           >
             Send an Email
           </a>
           <a
             href="/Nikshiptha_Sonajoke_Resume.pdf"
             download="Nikshiptha_Sonajoke_Resume.pdf"
-            className="border-2 border-gray-600 text-gray-300 font-bold py-3 px-8 rounded-lg hover:border-sky-500 hover:text-white transition-colors focusable" // Added focusable
+            className="border-2 border-gray-600 text-gray-300 font-bold py-3 px-8 rounded-lg hover:border-sky-500 hover:text-white transition-colors focusable"
           >
             Download Resume
           </a>
