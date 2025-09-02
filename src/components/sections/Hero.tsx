@@ -21,7 +21,7 @@ const Hero = () => {
               target="_blank"
               rel="noopener noreferrer"
               aria-label={social.name}
-              className="text-gray-400 hover:text-sky-400 transition-colors text-3xl p-1 focusable" // Added focusable
+              className="text-gray-400 hover:text-sky-400 transition-colors text-3xl p-1 focusable"
             >
               <social.icon />
             </a>
@@ -29,7 +29,7 @@ const Hero = () => {
           <a
             href={heroData.resumeUrl}
             download="Nikshiptha_Sonajoke_Resume.pdf"
-            className="bg-sky-500 text-white font-bold py-3 px-6 rounded-lg hover:bg-sky-600 transition-colors focusable" // Added focusable
+            className="bg-sky-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-sky-700 transition-colors focusable"
           >
             Download Resume
           </a>
@@ -39,4 +39,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default Hero; // This line is the crucial fix.

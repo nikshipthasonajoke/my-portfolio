@@ -1,5 +1,6 @@
-import { FaCode, FaEnvelope, FaGithub, FaLinkedin, FaReact, FaPython, FaHtml5, FaCss3Alt, FaNodeJs, FaTrophy } from "react-icons/fa";
-import { SiCplusplus, SiJavascript, SiMysql, SiPandas, SiScikitlearn, SiFlask, SiPhp, SiNumpy } from "react-icons/si";
+// Final, verified list of all icons.
+import { FaBootstrap, FaBrain, FaChartBar, FaCogs, FaEnvelope, FaEye, FaGithub, FaLinkedin, FaReact, FaPython, FaHtml5, FaCss3Alt, FaNodeJs, FaTrophy, FaCode } from "react-icons/fa";
+import { SiCplusplus, SiJavascript, SiMysql, SiPandas, SiScikitlearn, SiFlask, SiPhp, SiNumpy, SiTensorflow } from "react-icons/si";
 
 export const navLinks = [
   { name: "About", href: "#about" },
@@ -73,11 +74,14 @@ export const awardsData = [
     }
 ];
 
+// === THIS IS THE FINAL, VERIFIED, AND PERFECTLY BALANCED SKILL SECTION ===
 export const techStackData = {
   "Programming": [
     { name: "Python", icon: FaPython },
     { name: "C++", icon: SiCplusplus },
+    { name: "C", icon: FaCode },
     { name: "JavaScript", icon: SiJavascript },
+    { name: "Verilog", icon: FaCode },
     { name: "MySQL", icon: SiMysql },
   ],
   "Web Development": [
@@ -87,10 +91,14 @@ export const techStackData = {
     { name: "CSS", icon: FaCss3Alt },
     { name: "Flask", icon: SiFlask },
     { name: "PHP", icon: SiPhp },
+    { name: "Bootstrap", icon: FaBootstrap },
   ],
   "Machine Learning": [
-    { name: "Numpy", icon: SiNumpy },
-    { name: "Pandas", icon: SiPandas },
     { name: "Scikit-Learn", icon: SiScikitlearn },
+    { name: "Pandas", icon: SiPandas },
+    { name: "TensorFlow", icon: SiTensorflow },
+    { name: "Numpy", icon: SiNumpy },
+    { name: "Matplotlib", icon: FaChartBar },
+    { name: "Random Forest", icon: FaCogs },
   ],
 };
